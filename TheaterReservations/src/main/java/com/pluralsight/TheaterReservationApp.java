@@ -25,7 +25,6 @@ public class TheaterReservationApp {
         StringBuilder fullName = new StringBuilder();
 
         fullName.append(firstName).append(" ").append(lastName);
-        ;
 
 
         // Ask the user for the date of coming
