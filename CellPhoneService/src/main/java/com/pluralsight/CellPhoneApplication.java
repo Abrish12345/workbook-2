@@ -17,7 +17,7 @@ public class CellPhoneApplication {
     System.out.println("who is the carrier?");
     String carrier=theScanner.nextLine();
 
-    System.out.println("what model is the phone number?");
+    System.out.println("what is the phone number?");
     String phoneNumber=theScanner.nextLine();
 
     System.out.println("who is the owner of the phone?");
@@ -29,6 +29,8 @@ public class CellPhoneApplication {
         myPhone.setCarrier(carrier);
         myPhone.setPhoneNumber(phoneNumber);
         myPhone.setOwner(owner);
+
+
 
         //use the getters to display this information
 
