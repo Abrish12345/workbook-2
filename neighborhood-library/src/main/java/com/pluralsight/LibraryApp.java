@@ -16,7 +16,7 @@ public class LibraryApp {
     public static void main(String[] args) {
         boolean appRunning = true;
         while (appRunning) {
-            showMainMenu();  //Call the showmainmenu method inside the loop
+            showMainMenu();  //Call the show mainmenu method inside the loop
             int choice = theScanner.nextInt();  // Get the users choice
 
             switch (choice) {
@@ -35,7 +35,9 @@ public class LibraryApp {
                         String userName = theScanner.nextLine(); //get the user name
 
                         //Checkout the book
+
                         theBooks[bookchoice].checkOut(userName);
+                        System.out.println(theBooks[bookchoice].getTitle() + " was successfully checked out to " + userName + ".");
 
                     } else if (bookchoice == -1) {
                         // go back to the main menu
@@ -44,8 +46,8 @@ public class LibraryApp {
 
                     } else {
                         System.out.println("Invalid user name");
-                    }
 
+                    }
                     break;
 
 
